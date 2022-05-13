@@ -1,13 +1,191 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.wrapper {
+  width: 40%;
+  margin: 0 auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  padding: 5rem;
+}
+
+.taskContainer {
+  background: rgb(237, 247, 252);
+}
+.taskHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  background-color: white;
+  padding-left: 5px;
+}
+
+.actionWrapper {
+  border-left: 1px solid #eee;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.plusIcon {
+  font-size: 20px;
+  font-weight: bold;
+}
+.actionWrapper:hover {
+  background: #c0c0c0;
+  color: white;
+}
+
+.actionWrapper:active {
+  background: #6082b6;
+}
+.taskBoard {
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+  padding-left: 1rem;
+}
+.taskBody {
+}
+
+.descForm {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.textInput {
+  position: relative;
+}
+.descInput {
+  width: 450px;
+  padding-left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+.inputWrapper {
+  position: relative;
+}
+.iconItem {
+  position: absolute;
+  right: 2%;
+  top: 20%;
+  font-size: 20px;
+}
+.timeWrapper {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.datePicker {
+  padding: 5px;
+}
+.datePick {
+  width: 500px;
+}
+
+.selectWrapper {
+}
+
+.dateWrapper {
+  position: relative;
+}
+
+input:focus {
+  outline: none;
+}
+
+.dateIcon {
+  position: absolute;
+  right: 5%;
+  top: 20%;
+  z-index: 50;
+}
+.timePicker {
+  background-color: white;
+}
+.col-sm-6 {
+}
+.selectWrapper {
+  margin: 1rem;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: end;
+  margin: 1rem;
+}
+button {
+  margin-left: 2rem;
+}
+
+.saveBtn {
+  background: rgb(71, 187, 127);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px 25px;
+  color: #fff;
+  cursor: pointer;
+}
+.closeBtn {
+  background: none;
+  border-radius: none;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.taskItemBody {
+  width: 100%;
+}
+.taskItem {
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  justify-content: space-between;
+}
+
+.itemText {
+  margin-left: 1rem;
+}
+
+.itemSpan {
+  margin-top: -15px;
+  font-size: 15px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.iconPen {
+  margin-right: 10px;
+  color: blue;
+}
+.iconPen:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
+.iconTrash {
+  color: red;
+}
+.iconTrash:hover {
+  font-size: 30px;
+  cursor: pointer;
 }
